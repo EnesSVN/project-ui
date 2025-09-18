@@ -10,4 +10,45 @@
     Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   --leading-normal: 1.5;
+
+  --text-h1: clamp(2rem, 1.2rem + 3vw, 3.25rem);
+  --text-h2: clamp(1.5rem, 1rem + 2vw, 2.25rem);
+  --text-h3: clamp(1.25rem, 0.9rem + 1.2vw, 1.5rem);
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+}
+
+@utility heading-1 {
+  font-size: var(--text-h1);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+@utility heading-2 {
+  font-size: var(--text-h2);
+  line-height: 1.2;
+  font-weight: 700;
+}
+@utility heading-3 {
+  font-size: var(--text-h3);
+  line-height: 1.25;
+  font-weight: 600;
+}
+@utility text-body {
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+}
+@utility text-caption {
+  font-size: var(--text-caption);
+  line-height: 1.35;
+  color: var(--color-muted);
+}
+
+@utility container-app {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
