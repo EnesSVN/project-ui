@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "outDir": "ui-dist",
+    "skipLibCheck": true,
+    "incremental": false,
+    "composite": false
+  },
+  "include": [
+    "src/ui/index.ts",
+    "src/components/**/*.ts",
+    "src/components/**/*.tsx"
+  ],
+  "exclude": [
+    "src/**/*.stories.ts",
+    "src/**/*.stories.tsx",
+    ".storybook/**",
+    "src/app/**"
+  ]
+}
